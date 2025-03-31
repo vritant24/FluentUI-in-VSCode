@@ -17,4 +17,4 @@ run the default debug configuration. This will start the preview server in a ter
 
 ### Editing the token mapping
 
-the FluentUI -> VSCode token mapping can be found [here](.src/themes/VSCodeTheme.ts). You can edit the mapping to see the components change.
+the FluentUI -> VSCode token mapping can be found [here](./src/themes/VSCodeTheme.ts). You can edit the mapping to see the components change.
