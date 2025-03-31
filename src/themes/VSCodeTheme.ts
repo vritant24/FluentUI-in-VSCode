@@ -1,6 +1,56 @@
-import { webDarkTheme } from "@fluentui/react-components";
+import {
+  BorderRadiusTokens,
+  HorizontalSpacingTokens,
+  StrokeWidthTokens,
+  VerticalSpacingTokens,
+  webDarkTheme,
+} from "@fluentui/react-components";
 
 // Create a theme based on VS Code CSS variables
+
+const horizontalSpacingTokens: HorizontalSpacingTokens = {
+  spacingHorizontalNone: "0",
+  spacingHorizontalXXS: "2px",
+  spacingHorizontalXS: "4px",
+  spacingHorizontalSNudge: "6px",
+  spacingHorizontalS: "8px",
+  spacingHorizontalMNudge: "10px",
+  spacingHorizontalM: "12px",
+  spacingHorizontalL: "16px",
+  spacingHorizontalXL: "20px",
+  spacingHorizontalXXL: "24px",
+  spacingHorizontalXXXL: "32px",
+};
+
+const verticalSpacingTokens: VerticalSpacingTokens = {
+  spacingVerticalNone: "0",
+  spacingVerticalXXS: "2px",
+  spacingVerticalXS: "4px",
+  spacingVerticalSNudge: "6px",
+  spacingVerticalS: "8px",
+  spacingVerticalMNudge: "10px",
+  spacingVerticalM: "12px",
+  spacingVerticalL: "16px",
+  spacingVerticalXL: "20px",
+  spacingVerticalXXL: "24px",
+  spacingVerticalXXXL: "32px",
+};
+
+const strokeWidthTokens: StrokeWidthTokens = {
+  strokeWidthThin: "1px",
+  strokeWidthThick: "2px",
+  strokeWidthThicker: "3px",
+  strokeWidthThickest: "4px",
+};
+
+const borderRadii: BorderRadiusTokens = {
+  borderRadiusNone: "0px",
+  borderRadiusSmall: "2px",
+  borderRadiusMedium: "4px",
+  borderRadiusLarge: "6px",
+  borderRadiusXLarge: "8px",
+  borderRadiusCircular: "10000px",
+};
 
 const fontSizes = {
   fontSizeBase100: "0.6rem",
@@ -257,4 +307,12 @@ export const colorTokens = {
   colorBrandBackground4Static: "var(--vscode-button-background)",
 };
 
-export const VSCodeTheme = { ...webDarkTheme, ...fontTokens, ...colorTokens };
+export const VSCodeTheme = {
+  ...webDarkTheme,
+  ...fontTokens,
+  ...colorTokens,
+  ...borderRadii,
+  ...strokeWidthTokens,
+  ...horizontalSpacingTokens,
+  ...verticalSpacingTokens,
+};
