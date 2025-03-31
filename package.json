@@ -1,0 +1,29 @@
+{
+  "name": "fluentui-in-vscode",
+  "version": "0.0.1",
+  "private": true,
+  "description": "A storybook to test out themeing of FluentUI components inside VSCode",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vritant24/FluentUI-in-VSCode"
+  },
+  "author": "vritant24",
+  "license": "MIT",
+  "scripts": {
+    "typecheck": "tsc --config ./tsconfig.json",
+    "preview": "vite preview",
+    "build": "vite build",
+    "watch": "vite build --watch"
+  },
+  "dependencies": {
+    "@fluentui/react-components": "^9.61.5",
+    "@vitejs/plugin-react": "^4.3.4",
+    "react": "^18.3.1",
+    "typescript": "^5.8.2",
+    "vite": "^6.2.4"
+  },
+  "devDependencies": {
+    "jsdom": "^26.0.0",
+    "vitest": "^3.0.9"
+  }
+}
